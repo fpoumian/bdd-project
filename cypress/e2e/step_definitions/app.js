@@ -24,3 +24,9 @@ Then("I type birds into the search input and press search button", () => {
 Then("I should see Birds Images in results", () => {
     cy.get(":nth-child(24) > img").should("be.visible");
 });
+
+Then("I click the Food button and see Food header and 24 images in results", () => {
+    cy.get(":nth-child(4) > a").click({ force: true });
+    cy.get("h2").should("have.text", "food Pictures")
+    cy.get(":nth-child(24) > img").should("be.visible");
+});

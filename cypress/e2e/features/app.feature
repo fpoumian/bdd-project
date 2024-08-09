@@ -6,3 +6,4 @@ Feature: Snapshot website test scenarios
     Then I click in the text input
     Then I type birds into the search input and press search button
     Then I should see Birds Images in results
+    Then I click the Food button and see Food header and 24 images in results
