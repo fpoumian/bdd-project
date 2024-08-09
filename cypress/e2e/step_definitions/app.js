@@ -21,6 +21,6 @@ Then("I type birds into the search input and press search button", () => {
     cy.get(".search-button").click();
 });
 
-Then("I should see Birds Images in header", () => {
+Then("I should see Birds Images in results", () => {
     cy.get(":nth-child(24) > img").should("be.visible");
 });
