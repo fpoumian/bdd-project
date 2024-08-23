@@ -30,3 +30,11 @@ Then("I click the Food button and see Food header and 24 images in results", () 
     cy.get("h2").should("have.text", "food Pictures")
     cy.get(":nth-child(24) > img").should("be.visible");
 });
+
+Then("I delete the search query from the search field", () => {
+    cy.get("input").clear();
+});
+
+Then("I should not be able to press the search button", () => {
+    cy.get(".search-button").should("be.disabled");
+})

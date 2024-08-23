@@ -7,3 +7,5 @@ Feature: Snapshot website test scenarios
     Then I type birds into the search input and press search button
     Then I should see Birds Images in results
     Then I click the Food button and see Food header and 24 images in results
+    Then I delete the search query from the search field
+    Then I should not be able to press the search button
